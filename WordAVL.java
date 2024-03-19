@@ -3,7 +3,9 @@ public class WordAVL implements Comparable<WordAVL>{
     private String def;
     private String score;
     
-    
+    public WordAVL(String word){
+        this.word = word;
+    }
     public WordAVL(String word,String def,String score){
         this.word = word;
         this.def = def;
