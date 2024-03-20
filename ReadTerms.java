@@ -1,3 +1,7 @@
+//Unathi Shabangu
+//SHBUNA001
+//2024/03/19
+//A class to read the contents of a file containing only terms
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
@@ -26,5 +30,7 @@ public class ReadTerms {
         WordAVL w = new WordAVL(term);
         terms.insert(w);
     }
+    public AVLTree<WordAVL> getList(){return terms;}
+        
 }
         

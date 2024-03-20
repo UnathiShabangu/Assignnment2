@@ -1,3 +1,7 @@
+//Unathi Shabangu
+//SHBUNA001
+//2024/03/19
+//A class to read the contents of a file containing terms,sentences and confidence scores
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
@@ -34,5 +38,16 @@ public class ReadFileAVL {
             wordList.insert(wordOBJ);
         }
     }
+    public String findWord(String word) {
+        BinaryTreeNode<WordAVL> node = wordList.find(new WordAVL(word, "", ""));
+        if (node != null) {
+            return String.format("%s : %s (%s)", node.data.getWord(), node.data.getDef(), node.data.getScore().trim());
+        } 
+        else {
+            return String.format("The word \"%s\" was not found.", word);
+        }
+    }
+    public AVLTree<WordAVL> getList(){return wordList;}
+
 }
     

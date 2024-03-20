@@ -1,3 +1,7 @@
+//Unathi Shabangu
+//SHBUNA001
+//2024/03/19
+//A class to create word objects
 public class WordAVL implements Comparable<WordAVL>{
     private String word;
     private String def;
